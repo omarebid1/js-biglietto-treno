@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container-fluid p-3 bg-danger ">
+            <div class="row p-2 text-center">
+                <h1 class="text-white fw-bold"> CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>
+            </div>
+            
+            <div class="row rounded-4 mx-5 p-4 bg-white">
+
+                    <div class="row">
+                        <div class="px-5 col-4">
+                            <label for="nome1" class="form-label text-danger text-start fs-5">Nome Cognome</label>
+                            <input type="text" class="form-control border-danger" id="inputNome">
+                          </div>
+    
+                          <div class="px-5 col-4">
+                            <label for="km" class="form-label text-danger text-start fs-5">KM da percorrere</label>
+                            <input type="number" class="form-control border-danger" id="inputKm">
+                          </div>
+    
+                          <div class="px-5 col-4">
+                            <label for="eta" class="form-label text-danger text-start fs-5">Età</label>
+                            <input type="number" class="form-control border-danger" id="inputEta">
+                          </div>
+                    </div>
+
+                      <div class=" text-center pt-3">
+                        <button type="button" class="btn btn-outline-danger mx-2 btn-lg" id="genera">Genera</button>
+                        <button type="button" class="btn btn-outline-danger mx-2 btn-lg" id="annulla">Annulla</button>
+                      </div>
+            </div>
+
+            <div class="row mt-3 text-center">
+                <h1 class="text-white fw-bold">IL TUO BIGLIETTO </h1>
+            </div>
+
+            <div class="row rounded-4 mx-5 mt-3 p-5 bg-white text-center">
+
+                <div class="row">
+                    <div class="mb-2 ps-4" >
+                        <h3 class="text-start">DETTAGLIO PASSEGGERO</h3>
+                    </div>
+
+                    <hr class="mb-0">
+                    <div class="row m-0 p-0">
+                        <div class="container-fluid col-3 py-5 text-bg-secondary text-dark fw-bold fs-4">
+                                NOME PASSEGGERO
+                                <h5 class="text-dark mt-4 fs-4 text-center" id="nomePasseggero">_</h3>
+                        </div>
+                        <div class="col-9 pt-4 ps-0 text-start pe-0">
+
+                            <div class="col-3 m-5 p-5 d-inline fw-bold fs-4 me-0 ms-0">
+                                Offerta
+                            </div>
+                            
+                            <div class="col-3 p-5 d-inline fw-bold fs-4">
+                                Carrozza
+                            </div>
+
+                            <div class="col-3 m-5 p-5 d-inline fw-bold fs-4 me-0">
+                                Codice CP
+                            </div>
+
+                            <div class="col-3 m-5 p-5 d-inline fw-bold fs-4 me-0">
+                                Costo Biglietto
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <div class="col-3 ps-5 ms-0 fs-5" id="offerta">
+                                    _
+                                </div>
+    
+                                <div class="col-3 fs-5" id="carrozza">
+                                    _
+                                </div>
+    
+                                <div class="col-3 fs-5" id="codiceCp">
+                                    _
+                                </div>
+    
+                                <div class="col-3 ps-5 fs-5" id="prezzo">
+                                    0.00€
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>  
+            </div>
+        </div>    
+
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
